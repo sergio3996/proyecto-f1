@@ -17,24 +17,26 @@
 <body>
 
     <header>
-        <nav class="navBar flex--container">
-            <img class="navBar__logo" src="./images/index/f1-logo.png" alt="F1 Logo">
-            <ul class="navBar__items">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/teams.html">Equipos</a></li>
-                <li><a href="./pages/drivers.html">Pilotos</a></li>
-                <li><a href="./pages/schedule.html">Calendario</a></li>
-                <li><a href="./pages/galery.html">Galeria</a></li>
-            </ul>
-        </nav>
-        <img class="banner" src="./images/index/main-banner.jpeg" alt="">
+        <div class="navBar flex--container">
+            <a href="#"><img class="navLogo" src="../images/index/f1-logo.png" alt="F1 Logo"></a>
+            <nav>
+                <ul class="navBar__items">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/teams.html">Equipos</a></li>
+                    <li><a href="./pages/drivers.html">Pilotos</a></li>
+                    <li><a href="./pages/schedule.html">Calendario</a></li>
+                    <li><a href="./pages/galery.html">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="banner" src="../images/index/main-banner.jpeg" alt="">
     </header>
 
     <main>
         <h1 class="title">Noticias F1</h1>
         <div class="mainContent flex--container">
             <section class="news flex--container">
-                <div class="card flex--container">
+                <article class="card flex--container">
                     <img class="card__image" src="./images/index/f1-1.jpg" alt="">
                     <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been
@@ -42,8 +44,8 @@
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, remaining essentially unchanged. It was
                         popularised.</p>
-                </div>
-                <div class="card flex--container">
+                </article>
+                <article class="card flex--container">
                     <img class="card__image" src="./images/index/f1-2.jpg" alt="">
                     <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been
@@ -51,8 +53,8 @@
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, remaining essentially unchanged. It was
                         popularised.</p>
-                </div>
-                <div class="card flex--container">
+                </article>
+                <article class="card flex--container">
                     <img class="card__image" src="./images/index/f1-3.jpg" alt="">
                     <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been
@@ -60,8 +62,8 @@
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, remaining essentially unchanged. It was
                         popularised.</p>
-                </div>
-                <div class="card flex--container">
+                </article>
+                <article class="card flex--container">
                     <img class="card__image" src="./images/index/f1-4.jpg" alt="">
                     <p class="card__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been
@@ -69,10 +71,10 @@
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, remaining essentially unchanged. It was
                         popularised.</p>
-                </div>
+                </article>
             </section>
             <section class="twitterFeed">
-                <img src="./images/index/twitter-feed.PNG" alt="">
+                <a class="twitter-timeline" data-lang="en" data-width="400" data-height="650" data-theme="light" href="https://twitter.com/F1?ref_src=twsrc%5Etfw">Tweets by F1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </section>
         </div>
     </main>
@@ -91,7 +93,6 @@
         </div>
     </footer>
 
-<script src="js/index.js"></script>
 </body>
 
 </html>
