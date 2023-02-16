@@ -20,18 +20,36 @@
 <body>
 
     <header>
-        <div class="navBar flex--container">
-            <a href="../index.html"><img class="navLogo" src="../images/index/f1-logo.png" alt="F1 Logo"></a>
-            <nav>
-                <ul class="navBar__items">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./teams.html">Equipos</a></li>
-                    <li><a href="#">Pilotos</a></li>
-                    <li><a href="./schedule.html">Calendario</a></li>
-                    <li><a href="./galery.html">Galeria</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid paddingx-lg-200 paddingx-md-50 paddingx-sm-5 paddingx-xxl-350">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img class="navLogo" src="../images/index/f1-logo.png"
+                        alt="F1 Logo"></a>
+                <div class="collapse navbar-collapse flex-md-grow-0 flex-lg-grow-0" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./teams.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pilotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./schedule.html">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galery.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <img class="banner" src="../images/index/main-banner.jpeg" alt="">
     </header>
 
@@ -39,83 +57,103 @@
         <h1 class="title">Pilotos F1 2023</h1>
         <div class="container px-md-1 driversContent">
             <div class="row justify-content-center">
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
                     <p class="driverCard__text">Lewis Hamilton</p>
                     <img class="driverCard__photo" src="../images/drivers/hamilton.png" alt="Lewis Hamilton">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
                     <p class="driverCard__text">George Russell</p>
                     <img class="driverCard__photo" src="../images/drivers/russell.png" alt="George Russell">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--netherlands">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--netherlands">
                     <p class="driverCard__text">Max Verstappen</p>
                     <img class="driverCard__photo" src="../images/drivers/verstappen.png" alt="Max Verstappen">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--mexico">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--mexico">
                     <p class="driverCard__text">Sergio Perez</p>
                     <img class="driverCard__photo" src="../images/drivers/perez.png" alt="Sergio Perez">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--monaco">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--monaco">
                     <p class="driverCard__text">Charles Leclerc</p>
                     <img class="driverCard__photo" src="../images/drivers/leclerc.png" alt="Charles Leclerc">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--spain">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--spain">
                     <p class="driverCard__text">Carlos Sainz</p>
                     <img class="driverCard__photo" src="../images/drivers/sainz.png" alt="Carlos Sainz">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedkingdom">
                     <p class="driverCard__text">Lando Norris</p>
                     <img class="driverCard__photo" src="../images/drivers/norris.png" alt="Lando Norris">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--australia">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--australia">
                     <p class="driverCard__text">Oscar Piastri</p>
                     <img class="driverCard__photo" src="../images/drivers/piastri.png" alt="Oscar Piastri">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--canada">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--canada">
                     <p class="driverCard__text">Lance Stroll</p>
                     <img class="driverCard__photo" src="../images/drivers/stroll.png" alt="Lance Stroll">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--spain">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--spain">
                     <p class="driverCard__text">Fernando Alonso</p>
                     <img class="driverCard__photo" src="../images/drivers/alonso.png" alt="Fernando Alonso">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--finland">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--finland">
                     <p class="driverCard__text">Valtteri Bottas</p>
                     <img class="driverCard__photo" src="../images/drivers/bottas.png" alt="Valtteri Bottas">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--china">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--china">
                     <p class="driverCard__text">Guanyu Zhou</p>
                     <img class="driverCard__photo" src="../images/drivers/guanyu.png" alt="Guanyu Zhou">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--denmark">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--denmark">
                     <p class="driverCard__text">Kevin Magnussen</p>
                     <img class="driverCard__photo" src="../images/drivers/magnussen.png" alt="Kevin Magnussen">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--germany">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--germany">
                     <p class="driverCard__text">Nico Hulkenberg</p>
                     <img class="driverCard__photo" src="../images/drivers/hulkenberg.png" alt="Nico Hulkenberg">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--france">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--france">
                     <p class="driverCard__text">Pierre Gasly</p>
                     <img class="driverCard__photo" src="../images/drivers/gasly.png" alt="Pierre Gasly">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--france">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--france">
                     <p class="driverCard__text">Esteban Ocon</p>
                     <img class="driverCard__photo" src="../images/drivers/ocon.png" alt="Esteban Ocon">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--netherlands">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--netherlands">
                     <p class="driverCard__text">Nyck De Vries</p>
                     <img class="driverCard__photo" src="../images/drivers/devries.png" alt="Nyck De Vries">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--japan">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--japan">
                     <p class="driverCard__text">Yuki Tsunoda</p>
                     <img class="driverCard__photo" src="../images/drivers/tsunoda.png" alt="Yuki Tsunoda">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--thailand">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--thailand">
                     <p class="driverCard__text">Alexander Albon</p>
                     <img class="driverCard__photo" src="../images/drivers/albon.png" alt="Alexander Albon">
                 </article>
-                <article class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedstate">
+                <article
+                    class="col-10 col-md-5 col-lg-3 driverCard flex--container drivercardBackground drivercardBackground--unitedstate">
                     <p class="driverCard__text">Logan Sargeant</p>
                     <img class="driverCard__photo" src="../images/drivers/sargeant.png" alt="Logan Sargeant">
                 </article>
@@ -124,7 +162,7 @@
     </main>
 
     <footer>
-        <div class="footerContent">
+        <div class="footerContent paddingx-lg-200">
             <ul class="footerContent__pages">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./teams.html">Equipos</a></li>

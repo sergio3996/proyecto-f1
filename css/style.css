@@ -14,6 +14,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: 'Comfortaa' !important;
 }
 
 .flex--container {
@@ -94,44 +95,24 @@ body {
     background-image: url(../images/flags/finland.gif);
 }
 
+.paddingx-xxl-350 {
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+
 /* HEADER */
 
-.navBar {
-    justify-content: space-between;
-    align-items: center;
+.navbar {
     background-color: red;
-    height: 60px;
-    width: 100vw;
-    max-width: 100%;
-    padding: 0px 225px;
+    font-size: 18px;
     font-weight: bolder;
-    box-sizing: unset;
 }
 
 .navLogo {
     width: 95px;
     height: 60px;
     vertical-align: baseline;
-}
-
-.navBar__items {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding: 25px 450px 25px 0px;
-}
-
-.navBar__items li a {
-    margin: 0 15px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.navBar__items li a:hover {
-    color: black;
 }
 
 .banner {
@@ -333,7 +314,7 @@ footer {
     align-items: center;
     background-color: rgba(21, 21, 31, 255);
     height: 35px;
-    padding: 40px 225px;
+    padding: 40px 350px;
     box-sizing: unset;
 }
 
@@ -368,23 +349,9 @@ footer {
 
 @media only screen and (max-width: 576px) {
 
-    /* HEADER */
-
-    .navBar {
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: red;
-        height: 60px;
-        width: 100vw;
-        max-width: 100%;
-        padding: 0px 225px;
-        font-weight: bolder;
-        box-sizing: unset;
-    }
-
-    .navBar__items li a {
-        margin: 2px;
-        font-size: 12px;
+    .paddingx-sm-5 {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     /* MAIN */
@@ -394,17 +361,34 @@ footer {
         margin: 0;
     }
 
-    /* FOOTER */
 
     .footerContent {
         padding: 40px 5px;
     }
+
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+    .paddingx-md-50 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* FOOTER */
 
     .footerContent {
         padding: 40px 50px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+
+    .paddingx-lg-200 {
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
 }
