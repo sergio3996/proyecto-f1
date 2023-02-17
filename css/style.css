@@ -105,8 +105,34 @@ body {
 
 .navbar {
     background-color: red;
-    font-size: 18px;
-    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 40%, rgb(255, 130, 130) 50%, rgba(255, 0, 0, 1) 60%, rgba(255, 0, 0, 1) 100%);
+    background-size: 400% 100%;
+    animation: gradient 10s linear infinite;
+    animation-direction: alternate;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 25% 50%;
+    }
+
+    50% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 75% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .navLogo {
@@ -131,14 +157,11 @@ body {
 }
 
 .mainContent {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 300px;
+    padding: 20px 0px;
 }
 
 .news {
     flex-wrap: wrap;
-    width: 65%;
 }
 
 .card {
@@ -163,14 +186,8 @@ body {
     max-height: 100%;
 }
 
-.twitterFeed {
-    width: 34%;
-}
-
-.teamsContent {
-    padding: 20px 300px;
-    flex-wrap: wrap;
-    justify-content: center;
+.card__text a {
+    text-decoration: double;
 }
 
 .teamCard {
@@ -179,9 +196,15 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 250px;
-    width: 47%;
     box-shadow: 5px 10px 18px #888888;
     margin: 10px;
+}
+
+.teamCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 2%;
 }
 
 .teamCard__title {
@@ -194,7 +217,7 @@ body {
 .teamCard__carimage {
     max-width: 100%;
     max-height: 100%;
-    width: 375px;
+    width: auto;
     height: 100px;
     margin: 10px;
 }
@@ -204,14 +227,14 @@ body {
     align-items: flex-end;
     max-width: 100%;
     max-height: 100%;
-    width: 600px;
+    width: auto;
     color: black;
     font-size: 20px;
 }
 
 .teamCard__driversname img {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 .teamCard__text {
@@ -226,7 +249,16 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    box-shadow: 2px 3px 5px #888888
+    box-shadow: 2px 3px 5px #888888;
+    transform: scale(1);
+    transition: 0.1s ease;
+}
+
+.driverCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 3%;
 }
 
 .driverCard__text {
@@ -241,21 +273,22 @@ body {
     max-height: 100%;
 }
 
-.scheduleContent {
-    padding: 20px 300px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .scheduleCard {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: 300px;
-    width: 31%;
     margin: 10px;
     background-color: rgb(245, 245, 245);
     box-shadow: 2px 3px 8px #888888
+}
+
+.scheduleCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 3%;
 }
 
 .scheduleCard__text {
@@ -272,31 +305,22 @@ body {
     max-height: 100%;
 }
 
-.galeryContent {
-    padding: 20px 300px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 .galeryCard {
     flex-direction: column;
     margin: 5px;
-    width: 32%;
 }
 
 .galeryContent__image {
     max-width: 100%;
     max-height: 100%;
     padding-top: 5px;
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: .1s ease-in-out;
     transition: .1s ease-in-out;
 }
 
 .galeryContent__image:hover {
-    -webkit-transform: scale(1.01);
     transform: scale(1.01);
+    transition: .1s ease-in-out;
 }
 
 /* FOOTER */
@@ -356,11 +380,22 @@ footer {
 
     /* MAIN */
 
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 800px;
+    }
+
     .driversContent {
         padding: 20px 0px;
         margin: 0;
     }
 
+    .teamCard__driversname {
+        font-size: 16px;
+    }
+
+    /* FOOTER */
 
     .footerContent {
         padding: 40px 5px;
@@ -380,7 +415,6 @@ footer {
     .footerContent {
         padding: 40px 50px;
     }
-
 
 }
 
