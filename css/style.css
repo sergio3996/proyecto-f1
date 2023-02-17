@@ -100,8 +100,12 @@ body {
     padding-right: 350px;
 }
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
+}
+
+.modal-margintop-10 {
+    margin-top: 10%;
 }
 
 
@@ -415,7 +419,7 @@ footer {
         padding-right: 50px;
     }
 
-    .modal-md-width{
+    .modal-md-width {
         --bs-modal-width: 700px;
     }
 
@@ -432,6 +436,10 @@ footer {
     .paddingx-lg-200 {
         padding-left: 200px;
         padding-right: 200px;
+    }
+
+    .position-center {
+        position: 50% 50%;
     }
 
 }
