@@ -100,6 +100,11 @@ body {
     padding-right: 350px;
 }
 
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
 
 /* HEADER */
 
@@ -408,6 +413,10 @@ footer {
     .paddingx-md-50 {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .modal-md-width{
+        --bs-modal-width: 700px;
     }
 
     /* FOOTER */
