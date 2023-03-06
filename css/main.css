@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Comfortaa'; }
+
+h1 {
+  text-align: center;
+  font-style: initial;
+  font-weight: 700;
+  margin-top: 15px; }
+
+header {
+  background-color: red;
+  background: linear-gradient(90deg, red 0%, red 40%, #ff8282 50%, red 60%, red 100%);
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite;
+  animation-direction: alternate; }
+  header .banner {
+    width: 100vw;
+    height: auto;
+    max-width: 100%; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  25% {
+    background-position: 25% 50%; }
+  50% {
+    background-position: 50% 50%; }
+  50% {
+    background-position: 75% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+
+.navbar {
+  font-size: 20px;
+  font-weight: 700; }
+
+.navLogo {
+  width: 95px;
+  height: 60px;
+  vertical-align: baseline; }
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #15151f;
+  height: 35px;
+  padding: 40px 350px;
+  box-sizing: unset; }
+
+.footerContent__pages {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .footerContent__pages li a {
+    text-decoration: none;
+    color: white;
+    margin: 0; }
+    .footerContent__pages li a:hover {
+      color: red; }
+
+.footerContent__logo {
+  width: 80px;
+  height: 60px; }
+
+.footerContent__copyright {
+  color: white;
+  margin: 0; }
+
+.mainContent {
+  padding: 20px 0px; }
+
+.news {
+  display: flex;
+  flex-wrap: wrap; }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 800px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  margin: 5px; }
+
+.card__image {
+  height: auto;
+  width: auto;
+  padding: 5px; }
+
+.card__text {
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  max-width: 100%;
+  max-height: 100%; }
+  .card__text a {
+    text-decoration: double; }
+
+.teamCard {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+  box-shadow: 5px 10px 18px #888888;
+  margin: 10px; }
+  .teamCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 2%; }
+
+.teamCard__title {
+  max-width: 100%;
+  max-height: 100%;
+  color: black;
+  font-size: 25px; }
+
+.teamCard__carimage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 100px;
+  margin: 10px; }
+
+.teamCard__driversname {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  color: black;
+  font-size: 20px; }
+  .teamCard__driversname img {
+    width: 70px;
+    height: 70px; }
+
+.teamCard__text {
+  font-size: 16px; }
+
+.driversContent {
+  padding: 20px 100px; }
+
+.driverCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 2px 3px 5px #888888;
+  transform: scale(1);
+  transition: 0.1s ease; }
+  .driverCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 3%; }
+
+.driverCard__text {
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 20px;
+  font-weight: 500; }
+
+.driverCard__photo {
+  max-width: 100%;
+  max-height: 100%; }
+
+.drivercardBackground {
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.drivercardBackground--unitedkingdom {
+  background-image: url(../images/flags/unitedkingdom.png); }
+
+.drivercardBackground--netherlands {
+  background-image: url(../images/flags/netherlands.png); }
+
+.drivercardBackground--mexico {
+  background-image: url(../images/flags/mexico.png); }
+
+.drivercardBackground--monaco {
+  background-image: url(../images/flags/monaco.png); }
+
+.drivercardBackground--spain {
+  background-image: url(../images/flags/spain.png); }
+
+.drivercardBackground--france {
+  background-image: url(../images/flags/france.png); }
+
+.drivercardBackground--australia {
+  background-image: url(../images/flags/australia.png); }
+
+.drivercardBackground--china {
+  background-image: url(../images/flags/china.png); }
+
+.drivercardBackground--germany {
+  background-image: url(../images/flags/germany.png); }
+
+.drivercardBackground--canada {
+  background-image: url(../images/flags/canada.png); }
+
+.drivercardBackground--denmark {
+  background-image: url(../images/flags/denmark.png); }
+
+.drivercardBackground--japan {
+  background-image: url(../images/flags/japan.png); }
+
+.drivercardBackground--thailand {
+  background-image: url(../images/flags/thailand.png); }
+
+.drivercardBackground--unitedstate {
+  background-image: url(../images/flags/unitedstate.png); }
+
+.drivercardBackground--finland {
+  background-image: url(../images/flags/finland.png); }
+
+.scheduleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  margin: 10px;
+  background-color: whitesmoke;
+  box-shadow: 2px 3px 8px #888888; }
+  .scheduleCard:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+    border-radius: 3%; }
+
+.scheduleCard__text {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 100%;
+  width: 320px;
+  font-size: 18px;
+  font-weight: 500; }
+
+.scheduleCard__circuit {
+  max-width: 100%;
+  max-height: 100%; }
