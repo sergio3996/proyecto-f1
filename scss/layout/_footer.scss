@@ -1,3 +1,5 @@
+@import "../utilities/_mixins";
+
 footer {
     width: 100%;
     bottom: 0;
@@ -10,7 +12,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(21, 21, 31, 255);
-    height: 35px;
+    height: 40px;
     padding: 40px 350px;
     box-sizing: unset;
 }
@@ -20,11 +22,13 @@ footer {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    li a{
+
+    li a {
         text-decoration: none;
         color: white;
         margin: 0;
-        &:hover{
+
+        &:hover {
             color: red;
         }
     }
@@ -38,4 +42,16 @@ footer {
 .footerContent__copyright {
     color: white;
     margin: 0;
+}
+
+@include mobile {
+    .footerContent {
+        padding: 40px 5px;
+    }
+}
+
+@include tablet {
+    .footerContent {
+        padding: 40px 50px;
+    }
 }

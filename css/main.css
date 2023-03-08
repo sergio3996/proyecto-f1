@@ -12,7 +12,7 @@ body {
   overflow-x: hidden; }
 
 body {
-  font-family: 'Comfortaa'; }
+  font-family: 'Titillium Web', sans-serif; }
 
 h1 {
   text-align: center;
@@ -45,12 +45,21 @@ header {
 
 .navbar {
   font-size: 20px;
-  font-weight: 700; }
+  font-weight: 600;
+  padding: 0px 350px; }
 
 .navLogo {
   width: 95px;
   height: 60px;
   vertical-align: baseline; }
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0px 5px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    padding: 0px 50px; } }
 
 footer {
   width: 100%;
@@ -63,7 +72,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #15151f;
-  height: 35px;
+  height: 40px;
   padding: 40px 350px;
   box-sizing: unset; }
 
@@ -86,6 +95,14 @@ footer {
 .footerContent__copyright {
   color: white;
   margin: 0; }
+
+@media (max-width: 576px) {
+  .footerContent {
+    padding: 40px 5px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .footerContent {
+    padding: 40px 50px; } }
 
 .mainContent {
   padding: 20px 0px; }
@@ -116,6 +133,12 @@ footer {
   max-height: 100%; }
   .card__text a {
     text-decoration: double; }
+
+@media (max-width: 576px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 800px; } }
 
 .teamCard {
   display: flex;
@@ -238,6 +261,13 @@ footer {
 .drivercardBackground--finland {
   background-image: url(../images/flags/finland.png); }
 
+@media (max-width: 576px) {
+  .driversContent {
+    padding: 20px 0px;
+    margin: 0; }
+  .teamCard__driversname {
+    font-size: 16px; } }
+
 .scheduleCard {
   display: flex;
   flex-direction: column;
@@ -265,3 +295,29 @@ footer {
 .scheduleCard__circuit {
   max-width: 100%;
   max-height: 100%; }
+
+.paddingx-xxl-350 {
+  padding-left: 350px;
+  padding-right: 350px; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.modal-margintop-10 {
+  margin-top: 10%; }
+
+@media (max-width: 576px) {
+  .paddingx-sm-5 {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .paddingx-md-50 {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .modal-md-width {
+    --bs-modal-width: 700px; } }
+
+@media (min-width: 992px) {
+  .position-center {
+    position: 50% 50%; } }

@@ -1,10 +1,25 @@
+@import "../utilities/_mixins";
+
 .navbar {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    padding: 0px 350px;
 }
 
 .navLogo {
     width: 95px;
     height: 60px;
     vertical-align: baseline;
+}
+
+@include mobile {
+    .navbar {
+        padding: 0px 5px;
+    }
+}
+
+@include tablet {
+    .navbar {
+        padding: 0px 50px;
+    }
 }

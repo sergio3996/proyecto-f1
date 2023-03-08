@@ -1,0 +1,38 @@
+@import "./_mixins";
+
+.paddingx-xxl-350 {
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.modal-margintop-10 {
+    margin-top: 10%;
+}
+
+@include mobile {
+    .paddingx-sm-5 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@include tablet {
+    .paddingx-md-50 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .modal-md-width {
+        --bs-modal-width: 700px;
+    }
+}
+
+@include desktop {
+    .position-center {
+        position: 50% 50%;
+    }
+}
