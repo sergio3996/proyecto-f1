@@ -21,7 +21,7 @@ h1 {
   margin-top: 15px; }
 
 header {
-  background-color: red;
+  background-color: white;
   background: linear-gradient(90deg, red 0%, red 40%, #ff8282 50%, red 60%, red 100%);
   background-size: 400% 100%;
   animation: gradient 10s linear infinite;
@@ -29,7 +29,9 @@ header {
   header .banner {
     width: 100vw;
     height: auto;
-    max-width: 100%; }
+    max-width: 100%;
+    animation: banner-blur 12s linear infinite;
+    animation-direction: alternate; }
 
 @keyframes gradient {
   0% {
@@ -42,6 +44,23 @@ header {
     background-position: 75% 50%; }
   100% {
     background-position: 100% 50%; } }
+
+@keyframes banner-blur {
+  0% {
+    filter: blur(0px);
+    transform: scale(1); }
+  25% {
+    filter: blur(0.5px);
+    transform: scale(1.02); }
+  50% {
+    filter: blur(1px);
+    transform: scale(1.03); }
+  75% {
+    filter: blur(0.5px);
+    transform: scale(1.02); }
+  100% {
+    filter: blur(0px);
+    transform: scale(1); } }
 
 .navbar {
   font-size: 20px;
