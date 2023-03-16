@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Equipos 2023 de Fórmula 1">
-    <meta name="keywords" content="F1, EQUIPOS, FORMULA, AUTOMOVILISMO, DEPORTE, CARRERAS, COCHES, FERRARI, REDBULL, MERCEDES">
+    <meta name="keywords"
+        content="F1, EQUIPOS, FORMULA, AUTOMOVILISMO, DEPORTE, CARRERAS, COCHES, FERRARI, REDBULL, MERCEDES">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,110 +59,448 @@
 
     <main>
         <h1>Equipos</h1>
-        <div class="teamsContent container">
-            <div class="row justify-content-center">
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Mercedes</h2>
-                    <img class="teamCard__carimage" src="../images/teams/mercedes-car.png" alt="Coche Mercedes">
-                    <div class="teamCard__driversname">
-                        <p>Lewis Hamilton</p>
-                        <img src="../images/drivers/hamilton.png" alt="">
-                        <p>George Russell</p>
-                        <img src="../images/drivers/russell.png" alt="">
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="teams col-12 col-md-12 col-lg-2">
+                    <ul class="nav-tabs mr-0" role="tablist">
+                        <li class="nav-link active redbull-color" id="redbull-tab" data-bs-toggle="tab"
+                            data-bs-target="#redbull-tab-pane" type="button" role="tab" aria-controls="redbull-tab-pane"
+                            aria-selected="true">Red Bull</li>
+                        <li class="nav-link ferrari-color" id="ferrari-tab" data-bs-toggle="tab"
+                            data-bs-target="#ferrari-tab-pane" type="button" role="tab" aria-controls="ferrari-tab-pane"
+                            aria-selected="false">Ferrari</li>
+                        <li class="nav-link mercedes-color" id="mercedes-tab" data-bs-toggle="tab"
+                            data-bs-target="#mercedes-tab-pane" type="button" role="tab"
+                            aria-controls="mercedes-tab-pane" aria-selected="false">Mercedes
+                        </li>
+                        <li class="nav-link alpine-color" id="alpine-tab" data-bs-toggle="tab"
+                            data-bs-target="#alpine-tab-pane" type="button" role="tab" aria-controls="alpine-tab-pane"
+                            aria-selected="false">Alpine
+                        </li>
+                        <li class="nav-link mclaren-color" id="mclaren-tab" data-bs-toggle="tab"
+                            data-bs-target="#mclaren-tab-pane" type="button" role="tab" aria-controls="mclaren-tab-pane"
+                            aria-selected="false">McLaren</li>
+                        <li class="nav-link alfaromeo-color" id="alfaromeo-tab" data-bs-toggle="tab"
+                            data-bs-target="#alfaromeo-tab-pane" type="button" role="tab"
+                            aria-controls="alfaromeo-tab-pane" aria-selected="false">Alfa Romeo</li>
+                        <li class="nav-link astonmartin-color" id="astonmartin-tab" data-bs-toggle="tab"
+                            data-bs-target="#astonmartin-tab-pane" type="button" role="tab"
+                            aria-controls="astonmartin-tab-pane" aria-selected="false">Aston Martin</li>
+                        <li class="nav-link haas-color" id="haas-tab" data-bs-toggle="tab"
+                            data-bs-target="#haas-tab-pane" type="button" role="tab" aria-controls="haas-tab-pane"
+                            aria-selected="false">Haas</li>
+                        <li class="nav-link alphatauri-color" id="alphatauri-tab" data-bs-toggle="tab"
+                            data-bs-target="#alphatauri-tab-pane" type="button" role="tab"
+                            aria-controls="alphatauri-tab-pane" aria-selected="false">Alpha Tauri</li>
+                        <li class="nav-link williams-color" id="williams-tab" data-bs-toggle="tab"
+                            data-bs-target="#williams-tab-pane" type="button" role="tab"
+                            aria-controls="williams-tab-pane" aria-selected="false">Williams
+                        </li>
+                    </ul>
                 </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Alpine</h2>
-                    <img class="teamCard__carimage" src="../images/teams/alpine-car.png" alt="Coche Alpine">
-                    <div class="teamCard__driversname">
-                        <p>Esteban Ocon</p>
-                        <img src="../images/drivers/ocon.png" alt="Foto Ocon">
-                        <p>Pierre Gasly</p>
-                        <img src="../images/drivers/gasly.png" alt="Foto Gasly">
+                <div class=" tab-content col-12 col-md-12 col-lg-10" id="myTabContent">
+                    <div class="tab-pane fade show active" id="redbull-tab-pane" role="tabpanel"
+                        aria-labelledby="redbull-tab" tabindex="0">
+                        <div class="team redbull-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-redbull.png"
+                                    alt="Red Bull Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Oracle Red Bull Racing</p>
+                                        <p>Milton Keynes, Reino Unido</p>
+                                        <p>Christian Horner</p>
+                                        <p>RB19</p>
+                                        <p>Honda RBPT</p>
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/verstappen-card.png" alt="Max Verstappen">
+                                    <h2>Max Verstappen</h2>
+                                    <p>1</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/perez-card.png" alt="Sergio Perez">
+                                    <h2>Sergio Perez</h2>
+                                    <p>11</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/redbull-car.png" alt="Coche Red Bull">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Red Bull</h2>
-                    <img class="teamCard__carimage" src="../images/teams/redbull-car.png" alt="Coche Red Bull">
-                    <div class="teamCard__driversname">
-                        <p>Max Verstappen</p>
-                        <img src="../images/drivers/verstappen.png" alt="Foto Verstappen">
-                        <p>Sergio Perez</p>
-                        <img src="../images/drivers/perez.png" alt="Foto Perez">
+                    <div class="tab-pane fade" id="ferrari-tab-pane" role="tabpanel" aria-labelledby="ferrari-tab"
+                        tabindex="0">
+                        <div class="team ferrari-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-ferrari.png"
+                                    alt="Ferrari Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Scuderia Ferrari</p>
+                                        <p>Maranello, Italy</p>
+                                        <p>Frédéric Vasseur</p>
+                                        <p>SF-23</p>
+                                        <p>Ferrari</p>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/leclerc-card.png" alt="Charles Leclerc">
+                                    <h2>Charles Leclerc</h2>
+                                    <p>16</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/sainz-card.png" alt="Carlos Sainz">
+                                    <h2>Carlos Sainz</h2>
+                                    <p>55</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/ferrari-car.png" alt="Coche Ferrari">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Alfa Romeo</h2>
-                    <img class="teamCard__carimage" src="../images/teams/alfaromeo-car.png" alt="Coche Alfa Romeo">
-                    <div class="teamCard__driversname">
-                        <p>Valtteri Bottas</p>
-                        <img src="../images/drivers/bottas.png" alt="Foto Bottas">
-                        <p>Guanyu Zhou</p>
-                        <img src="../images/drivers/guanyu.png" alt="Foto Guanyu">
+                    <div class="tab-pane fade" id="mercedes-tab-pane" role="tabpanel" aria-labelledby="mercedes-tab"
+                        tabindex="0">
+                        <div class="team mercedes-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-mercedes.png"
+                                    alt="Mercedes Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Mercedes-AMG PETRONAS</p>
+                                        <p>Brackley, United Kingdom</p>
+                                        <p>Toto Wolff</p>
+                                        <p>W14</p>
+                                        <p>Mercedes</p>
+                                        <p>8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/hamilton-card.png" alt="Lewis Hamilton">
+                                    <h2>Lewis Hamilton</h2>
+                                    <p>44</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/russell-card.png" alt="George Russell">
+                                    <h2>George Russell</h2>
+                                    <p>63</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/mercedes-car.png" alt="Coche Mercedes">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Alpha Tauri</h2>
-                    <img class="teamCard__carimage" src="../images/teams/alphatauri-car.png" alt="Coche Alpha Tauri">
-                    <div class="teamCard__driversname">
-                        <p>Nyck De Vries</p>
-                        <img src="../images/drivers/devries.png" alt="Foto De Vries">
-                        <p>Yuki Tsunoda</p>
-                        <img src="../images/drivers/tsunoda.png" alt="Foto Tsunoda">
+                    <div class="tab-pane fade" id="alpine-tab-pane" role="tabpanel" aria-labelledby="alpine-tab"
+                        tabindex="0">
+                        <div class="team alpine-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-alpine.png"
+                                    alt="Alpine Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>BWT Alpine F1 Team</p>
+                                        <p>Enstone, United Kingdom</p>
+                                        <p>Otmar Szafnauer</p>
+                                        <p>A523</p>
+                                        <p>Renault</p>
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/ocon-card.png" alt="Esteban Ocon">
+                                    <h2>Esteban Ocon</h2>
+                                    <p>31</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/gasly-card.png" alt="Pierre Gasly">
+                                    <h2>Pierre Gasly</h2>
+                                    <p>10</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/mercedes-car.png" alt="Coche Mercedes">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Ferrari</h2>
-                    <img class="teamCard__carimage" src="../images/teams/ferrari-car.png" alt="Coche Ferrari">
-                    <div class="teamCard__driversname">
-                        <p>Charles Leclerc</p>
-                        <img src="../images/drivers/leclerc.png" alt="Foto Leclerc">
-                        <p>Carlos Sainz</p>
-                        <img src="../images/drivers/sainz.png" alt="Foto Sainz">
+                    <div class="tab-pane fade" id="mclaren-tab-pane" role="tabpanel" aria-labelledby="mclaren-tab"
+                        tabindex="0">
+                        <div class="team mclaren-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-mclaren.png"
+                                    alt="McLaren Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>McLaren F1 Team</p>
+                                        <p>Woking, United Kingdom</p>
+                                        <p>Andrea Stella</p>
+                                        <p>MCL60</p>
+                                        <p>Mercedes</p>
+                                        <p>8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/norris-card.png" alt="Lando Norris">
+                                    <h2>Lando Norris</h2>
+                                    <p>4</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/piastri-card.png" alt="Oscar Piastri">
+                                    <h2>Oscar Piastri</h2>
+                                    <p>81</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/mclaren-car.png" alt="Coche McLaren">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Aston Martin</h2>
-                    <img class="teamCard__carimage" src="../images/teams/astonmartin-car.png" alt="Coche Aston Martin">
-                    <div class="teamCard__driversname">
-                        <p>Lacen Stroll</p>
-                        <img src="../images/drivers/stroll.png" alt="Foto Stroll">
-                        <p>Fernando Alonso</p>
-                        <img src="../images/drivers/alonso.png" alt="Foto Alonso">
+                    <div class="tab-pane fade" id="alfaromeo-tab-pane" role="tabpanel" aria-labelledby="alfaromeo-tab"
+                        tabindex="0">
+                        <div class="team alfaromeo-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-alfaromeo.png"
+                                    alt="Alfa Romeo Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Alfa Romeo F1 Team Stake</p>
+                                        <p>Hinwil, Switzerland</p>
+                                        <p>Alessandro Alunni Bravi</p>
+                                        <p>C43</p>
+                                        <p>Ferrari</p>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/bottas-card.png" alt="Valtteri Bottas">
+                                    <h2>Valtteri Bottas</h2>
+                                    <p>77</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/guanyu-card.png" alt="Zhou Guanyu">
+                                    <h2>Zhou Guanyu</h2>
+                                    <p>23</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/mclaren-car.png" alt="Coche Alfa Romeo">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Haas</h2>
-                    <img class="teamCard__carimage" src="../images/teams/haas-car.png" alt="Coche Haas">
-                    <div class="teamCard__driversname">
-                        <p>Kevin Magnussen</p>
-                        <img src="../images/drivers/magnussen.png" alt="Foto Magnussen">
-                        <p>Nico Hulkenberg</p>
-                        <img src="../images/drivers/hulkenberg.png" alt="Foto Hulkenberg">
+                    <div class="tab-pane fade" id="astonmartin-tab-pane" role="tabpanel"
+                        aria-labelledby="astonmartin-tab" tabindex="0">
+                        <div class="team astonmartin-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-astonmartin.png"
+                                    alt="Aston Martin Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Aston Martin Aramco Cognizant</p>
+                                        <p>Silverstone, United Kingdom</p>
+                                        <p>Mike Krack</p>
+                                        <p>AMR23</p>
+                                        <p>Mercedes</p>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/alonso-card.png" alt="Fernando Alonso">
+                                    <h2>Fernando Alonso</h2>
+                                    <p>14</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/stroll-card.png" alt="Lance Stroll">
+                                    <h2>Lance Stroll</h2>
+                                    <p>18</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/astonmartin-car.png"
+                                alt="Coche Aston Martin">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Mclaren</h2>
-                    <img class="teamCard__carimage" src="../images/teams/mclaren-car.png" alt="Coche Mclaren">
-                    <div class="teamCard__driversname">
-                        <p>Lando Norris</p>
-                        <img src="../images/drivers/norris.png" alt="Foto Norris">
-                        <p>Oscar Piastri</p>
-                        <img src="../images/drivers/piastri.png" alt="Foto Piastri">
+                    <div class="tab-pane fade" id="haas-tab-pane" role="tabpanel" aria-labelledby="haas-tab"
+                        tabindex="0">
+                        <div class="team haas-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-haas.png" alt="Haas Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>MoneyGram Haas F1 Team</p>
+                                        <p>Kannapolis, United States</p>
+                                        <p>Guenther Steiner</p>
+                                        <p>VF-23</p>
+                                        <p>Ferrari</p>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/magnussen-card.png" alt="Kevin Magnussen">
+                                    <h2>Kevin Magnussen</h2>
+                                    <p>20</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/hulkenberg-card.png" alt="Nico Hulkenberg">
+                                    <h2>Nico Hulkenberg</h2>
+                                    <p>27</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/haas-car.png" alt="Coche Haas">
+                        </div>
                     </div>
-                </div>
-                <div class="teamCard col col-md-9 col-lg-5">
-                    <h2 class="teamCard__title">Williams</h2>
-                    <img class="teamCard__carimage" src="../images/teams/williams-car.png" alt="Coche Williams">
-                    <div class="teamCard__driversname">
-                        <p>Alexander Albon</p>
-                        <img src="../images/drivers/albon.png" alt="Foto Albon">
-                        <p>Logan Sargeant</p>
-                        <img src="../images/drivers/sargeant.png" alt="Foto Sargeant">
+                    <div class="tab-pane fade" id="alphatauri-tab-pane" role="tabpanel" aria-labelledby="alphatauri-tab"
+                        tabindex="0">
+                        <div class="team alphatauri-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-alphatauri.png"
+                                    alt="Alpha Tauri Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p>Scuderia AlphaTauri</p>
+                                        <p>Faenza, Italy</p>
+                                        <p>Franz Tost</p>
+                                        <p>AT04</p>
+                                        <p>Honda RBPT</p>
+                                        <p>N/A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/tsunoda-card.png" alt="Yuki Tsunoda">
+                                    <h2>Yuki Tsunoda</h2>
+                                    <p>22</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/devries-card.png" alt="Nyck De Vries">
+                                    <h2>Nyck De Vries</h2>
+                                    <p>21</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/alphatauri-car.png" alt="Coche Alpha Tauri">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="williams-tab-pane" role="tabpanel" aria-labelledby="williams-tab"
+                        tabindex="0">
+                        <div class="team williams-shadow-color">
+                            <div class="teamCard">
+                                <img class="teamCard-logo" src="../images/teams/logos/logo-williams.png"
+                                    alt="Williams Logo">
+                                <div class="teamCard-text">
+                                    <div class="teamCard-titles">
+                                        <p>Nombre del equipo</p>
+                                        <p>Base</p>
+                                        <p>Jefe de equipo</p>
+                                        <p>Chasis</p>
+                                        <p>Unidad de poder</p>
+                                        <p>Campeonatos mundiales</p>
+                                    </div>
+                                    <div class="teamCard-info">
+                                        <p> Williams Racing</p>
+                                        <p>Grove, United Kingdom</p>
+                                        <p>James Vowles</p>
+                                        <p>FW45</p>
+                                        <p>Mercedes</p>
+                                        <p>9</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teamDrivers">
+                                <div class="driver-card">
+                                    <img src="../images/drivers/albon-card.png" alt="Alexander Albon">
+                                    <h2>Alexander Albon</h2>
+                                    <p>23</p>
+                                </div>
+                                <div class="driver-card">
+                                    <img src="../images/drivers/sargeant-card.png" alt="Logan Sargeant">
+                                    <h2>Logan Sargeant</h2>
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            <img class="teamCar" src="../images/teams/cars/williams-car.png" alt="Coche Williams">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer>

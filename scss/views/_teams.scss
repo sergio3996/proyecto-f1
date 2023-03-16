@@ -1,51 +1,197 @@
-.teamCard {
+@import "../utilities/_variables";
+@import "../utilities/_mixins";
+
+.nav-tabs {
+    border: none;
+    padding: 0;
+    width: 200px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: 5px;
+    box-shadow: 2px 3px 5px #888888;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: red;
+    color: black;
+    border: none;
+}
+
+.teams {
+    margin: 23px 0;
     display: flex;
-    background-color: white;
-    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            width: 100%;
+            background-color: white;
+            border: 1px;
+            border-style: solid;
+            border-color: rgba(21, 21, 31, 255);
+            text-align: left;
+            padding: 10px 5px;
+            font-size: large;
+            font-weight: 700;
+
+            &:hover {
+                background-color: rgba(21, 21, 31, 255);
+                ;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 250px;
-    box-shadow: 5px 10px 18px #888888;
-    margin: 10px;
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.02);
-        transition: 0.1s ease;
-        border-radius: 2%;
+    height: auto;
+    padding: 10px;
+    margin: 23px 0;
+
+    .teamCar {
+        margin: 30px 0;
+        width: 558px;
+        max-width: 100%;
+        height: 160px;
+        box-shadow: 2px 3px 5px #888888;
+
     }
 }
 
-.teamCard__title {
-    max-width: 100%;
-    max-height: 100%;
-    color: black;
-    font-size: 25px;
-}
-
-.teamCard__carimage {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: 100px;
-    margin: 10px;
-}
-
-.teamCard__driversname {
+.teamCard {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: left;
+    width: 400px;
     max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    color: black;
-    font-size: 20px;
 
-    img {
-        width: 70px;
-        height: 70px;
+    .teamCard-logo {
+        height: 203px;
+        min-height: 203px;
+    }
+
+    .teamCard-text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        margin-top: 5px;
+
+        .teamCard-titles {
+            font-weight: bolder;
+            width: 40%;
+        }
+
+        .teamCard-info {
+            text-align: right;
+            width: 60%;
+        }
     }
 }
 
-.teamCard__text {
-    font-size: 16px;
+.teamDrivers {
+    display: flex;
+
+    .driver-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        box-shadow: 2px 3px 5px #888888;
+
+        h2 {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: bolder;
+            margin: 0;
+        }
+    }
+}
+
+@mixin team-color-background($teamName, $color) {
+    .nav-tabs .nav-link.active.#{$teamName}-color {
+        background-color: #{$color};
+    }
+}
+
+@each $teamName,
+$color in $teams-colors {
+    @include team-color-background($teamName, $color);
+}
+
+@mixin team-color-shadow($teamName, $color) {
+    .#{$teamName}-shadow-color {
+        box-shadow: 2px 2px 7px #{$color};
+    }
+}
+
+@each $teamName,
+$color in $teams-colors {
+    @include team-color-shadow($teamName, $color);
+}
+
+@include tablet {
+    .team {
+        flex-direction: column;
+        height: auto;
+
+        .teamCard {
+            width: 400px;
+        }
+    }
+
+    .teamDrivers {
+        display: flex;
+        justify-content: space-evenly;
+
+        .driver-card {
+            margin: 30px;
+            width: 240px;
+        }
+    }
+}
+
+@include between-mobile-tablet {
+    .teamCard {
+        width: 400px;
+    }
+
+    .teamDrivers {
+        flex-direction: column;
+    }
+
+}
+
+@include mobile {
+    .team {
+        flex-direction: column;
+        height: auto;
+
+        .teamCard {
+            width: 400px;
+        }
+    }
+
+    .teamDrivers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .driver-card {
+            margin: 30px;
+            width: 240px;
+        }
+    }
 }

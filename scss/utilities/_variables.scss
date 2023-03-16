@@ -1,6 +1,6 @@
 $mobile-width: 576px;
 $tablet-width: 768px;
-$desktop-width: 992px;
+$desktop-width: 1200px;
 
 $countries: (
     unitedkingdom,
@@ -18,4 +18,17 @@ $countries: (
     thailand,
     unitedstate,
     finland,
+);
+
+$teams-colors: (
+    redbull: rgba(54,113,198,255),
+    ferrari: rgba(249,21,54,255),
+    mercedes: rgba(108,211,191,255),
+    alpine: rgba(34,147,209,255),
+    mclaren: rgba(245,128,32,255),
+    alfaromeo: rgba(201,45,75,255),
+    astonmartin: rgba(53,140,117,255),
+    haas: rgba(182,186,189,255),
+    alphatauri: rgba(94,143,170,255),
+    williams: rgba(55,190,221,255)
 );
