@@ -3,7 +3,8 @@
 .navbar {
     font-size: 20px;
     font-weight: 600;
-    padding: 0px 18%;
+    padding: 0px 15%;
+    height: 80px;
 }
 
 .navLogo {
@@ -18,8 +19,3 @@
     }
 }
 
-@include tablet {
-    .navbar {
-        padding: 0px 50px;
-    }
-}

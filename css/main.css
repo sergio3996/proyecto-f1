@@ -7,6 +7,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  min-height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; }
@@ -21,6 +22,7 @@ h1 {
   margin-top: 15px; }
 
 header {
+  width: 100%;
   background-color: white;
   background: linear-gradient(90deg, red 0%, red 40%, #ff8282 50%, red 60%, red 100%);
   background-size: 400% 100%;
@@ -65,7 +67,8 @@ header {
 .navbar {
   font-size: 20px;
   font-weight: 600;
-  padding: 0px 18%; }
+  padding: 0px 15%;
+  height: 80px; }
 
 .navLogo {
   width: 95px;
@@ -76,52 +79,42 @@ header {
   .navbar {
     padding: 0px 5px; } }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .navbar {
-    padding: 0px 50px; } }
-
 footer {
   width: 100%;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background-color: #15151f; }
 
 .footerContent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #15151f;
-  height: 50px;
-  padding: 40px 18%;
+  height: 135px;
+  padding: 0 15%;
+  margin-top: 15px;
   box-sizing: unset; }
-
-.footerContent__pages {
-  display: block;
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-  .footerContent__pages li a {
-    text-decoration: none;
+  .footerContent .footerContent-pages {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .footerContent .footerContent-pages li a {
+      text-decoration: none;
+      color: white;
+      margin: 0; }
+      .footerContent .footerContent-pages li a:hover {
+        color: red; }
+  .footerContent .footerContent-logo {
+    width: 80px;
+    height: 60px; }
+  .footerContent .footerContent-copyright {
     color: white;
     margin: 0; }
-    .footerContent__pages li a:hover {
-      color: red; }
-
-.footerContent__logo {
-  width: 80px;
-  height: 60px; }
-
-.footerContent__copyright {
-  color: white;
-  margin: 0; }
 
 @media (max-width: 576px) {
   .footerContent {
-    padding: 40px 5px; } }
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .footerContent {
-    padding: 40px 50px; } }
+    padding: 0 5px; } }
 
 .mainContent {
   padding: 20px 0px; }
@@ -130,7 +123,7 @@ footer {
   display: flex;
   flex-wrap: wrap; }
 
-.card {
+.newsCard {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -138,38 +131,53 @@ footer {
   width: 100%;
   border-bottom-style: solid;
   border-right-style: solid;
-  margin: 5px; }
-  .card img {
-    height: 200px;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+  .newsCard .card-image {
+    height: 180px;
     width: 320px;
     padding: 5px;
     border-radius: 10px; }
-  .card div h2 {
+  .newsCard h2 {
     padding: 5px;
     margin: 5px; }
+  .newsCard .card-text {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    max-width: 100%;
+    max-height: 100%; }
+    .newsCard .card-text a {
+      text-decoration: double; }
 
-.card__text {
-  font-size: 16px;
-  padding: 5px;
-  margin: 5px;
-  max-width: 100%;
-  max-height: 100%; }
-  .card__text a {
-    text-decoration: double; }
+.twitterFeed {
+  display: flex;
+  justify-content: center;
+  max-height: 660px;
+  padding: 0; }
+
+.twitter-timeline {
+  padding: 3px 0;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  width: 356px;
+  max-width: 95%; }
 
 @media (max-width: 576px) {
-  .card {
+  .newsCard {
     flex-direction: column;
     height: fit-content;
     width: 400px; }
-    .card img {
+    .newsCard .card-image {
       max-width: 100%;
       max-height: 100%;
       height: 200px;
       width: 320px; } }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .card {
+  .newsCard {
     height: fit-content;
     width: 100%; } }
 
@@ -191,7 +199,8 @@ footer {
   margin: 23px 0;
   display: flex;
   justify-content: center;
-  height: 100%; }
+  height: 100%;
+  max-width: 100%; }
   .teams ul {
     list-style-type: none; }
     .teams ul li {
@@ -216,13 +225,13 @@ footer {
   align-items: center;
   height: auto;
   padding: 10px;
-  margin: 23px 0; }
+  margin: 23px 0;
+  max-width: 100%; }
   .team .teamCar {
     margin: 30px 0;
     width: 558px;
     max-width: 100%;
-    height: 160px;
-    box-shadow: 2px 3px 5px #888888; }
+    height: auto; }
 
 .teamCard {
   display: flex;
@@ -246,20 +255,26 @@ footer {
       width: 60%; }
 
 .teamDrivers {
-  display: flex; }
+  display: flex;
+  max-width: 85%; }
   .teamDrivers .driver-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
-    box-shadow: 2px 3px 5px #888888; }
+    box-shadow: 2px 3px 5px #888888;
+    max-width: 100%; }
+    .teamDrivers .driver-card img {
+      max-width: 100%; }
     .teamDrivers .driver-card h2 {
       font-size: 30px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      max-width: 100%; }
     .teamDrivers .driver-card p {
       font-size: 40px;
       font-weight: bolder;
-      margin: 0; }
+      margin: 0;
+      max-width: 100%; }
 
 .nav-tabs .nav-link.active.redbull-color {
   background-color: #3671c6; }
@@ -351,16 +366,18 @@ footer {
     flex-direction: column;
     justify-content: space-evenly; }
     .teamDrivers .driver-card {
-      margin: 30px;
+      margin: 30px 0;
       width: 240px; } }
 
 .driversContent {
-  padding: 20px 100px; }
+  padding: 20px 0; }
 
 .driverCard {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 300px;
+  max-width: 80%;
   margin: 10px;
   box-shadow: 2px 3px 5px #888888;
   transform: scale(1);
@@ -370,81 +387,114 @@ footer {
     transform: scale(1.02);
     transition: 0.1s ease;
     border-radius: 3%; }
+  .driverCard .driverCard-text {
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 20px;
+    font-weight: 500; }
+  .driverCard .driverCard-photo {
+    max-width: 100%;
+    max-height: 100%; }
 
-.driverCard__text {
-  max-width: 100%;
-  max-height: 100%;
-  font-size: 20px;
-  font-weight: 500; }
-
-.driverCard__photo {
-  max-width: 100%;
-  max-height: 100%; }
-
-.drivercardBackground {
+.drivercardBackground--unitedkingdom {
+  background-image: url(../images/flags/unitedkingdom.png);
   background-size: 400px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
-.drivercardBackground--unitedkingdom {
-  background-image: url(../images/flags/unitedkingdom.png); }
-
 .drivercardBackground--netherlands {
-  background-image: url(../images/flags/netherlands.png); }
+  background-image: url(../images/flags/netherlands.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--mexico {
-  background-image: url(../images/flags/mexico.png); }
+  background-image: url(../images/flags/mexico.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--monaco {
-  background-image: url(../images/flags/monaco.png); }
+  background-image: url(../images/flags/monaco.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--spain {
-  background-image: url(../images/flags/spain.png); }
+  background-image: url(../images/flags/spain.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--france {
-  background-image: url(../images/flags/france.png); }
+  background-image: url(../images/flags/france.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--australia {
-  background-image: url(../images/flags/australia.png); }
+  background-image: url(../images/flags/australia.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--china {
-  background-image: url(../images/flags/china.png); }
+  background-image: url(../images/flags/china.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--germany {
-  background-image: url(../images/flags/germany.png); }
+  background-image: url(../images/flags/germany.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--canada {
-  background-image: url(../images/flags/canada.png); }
+  background-image: url(../images/flags/canada.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--denmark {
-  background-image: url(../images/flags/denmark.png); }
+  background-image: url(../images/flags/denmark.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--japan {
-  background-image: url(../images/flags/japan.png); }
+  background-image: url(../images/flags/japan.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--thailand {
-  background-image: url(../images/flags/thailand.png); }
+  background-image: url(../images/flags/thailand.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--unitedstate {
-  background-image: url(../images/flags/unitedstate.png); }
+  background-image: url(../images/flags/unitedstate.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .drivercardBackground--finland {
-  background-image: url(../images/flags/finland.png); }
+  background-image: url(../images/flags/finland.png);
+  background-size: 400px 170px;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
-@media (max-width: 576px) {
-  .driverCard {
-    width: 50%; }
-  .driversContent {
-    padding: 20px 0px;
-    margin: 0; }
-  .teamCard__driversname {
-    font-size: 16px; } }
+.scheduleContent {
+  padding: 20px 0; }
 
 .scheduleCard {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 300px;
   height: 300px;
   margin: 10px;
   background-color: whitesmoke;
@@ -454,23 +504,39 @@ footer {
     transform: scale(1.02);
     transition: 0.1s ease;
     border-radius: 3%; }
+  .scheduleCard .scheduleCard-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px; }
+    .scheduleCard .scheduleCard-text h2 {
+      font-weight: bolder;
+      font-size: 18px;
+      height: 30px;
+      line-height: normal;
+      margin: 0;
+      padding: 0; }
+    .scheduleCard .scheduleCard-text p {
+      font-weight: 500;
+      font-size: 18px;
+      width: 130px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      text-align: right; }
+  .scheduleCard .scheduleCard-circuit {
+    max-width: 100%;
+    max-height: 100%; }
 
-.scheduleCard__text {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  max-height: 100%;
-  width: 320px;
-  font-size: 18px;
-  font-weight: 500; }
+.carousel-caption h5 {
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black; }
 
-.scheduleCard__circuit {
-  max-width: 100%;
-  max-height: 100%; }
-
-.paddingx-xxl-350 {
-  padding-left: 350px;
-  padding-right: 350px; }
+.carousel-caption p {
+  font-weight: 500;
+  text-shadow: 1px 1px 2px black; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -478,15 +544,7 @@ footer {
 .modal-margintop-10 {
   margin-top: 10%; }
 
-@media (max-width: 576px) {
-  .paddingx-sm-5 {
-    padding-left: 5px;
-    padding-right: 5px; } }
-
 @media (min-width: 768px) and (max-width: 1200px) {
-  .paddingx-md-50 {
-    padding-left: 50px;
-    padding-right: 50px; }
   .modal-md-width {
     --bs-modal-width: 700px; } }
 

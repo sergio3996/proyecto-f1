@@ -23,3 +23,15 @@
         @content;
     }
 }
+
+@mixin team-color-shadow($teamName, $color) {
+    .#{$teamName}-shadow-color {
+        box-shadow: 2px 2px 7px #{$color};
+    }
+}
+
+@mixin team-color-background($teamName, $color) {
+    .nav-tabs .nav-link.active.#{$teamName}-color {
+        background-color: #{$color};
+    }
+}
