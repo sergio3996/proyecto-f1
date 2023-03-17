@@ -24,6 +24,16 @@
     }
 }
 
+@mixin driver-card-background($country) {
+    .drivercardBackground--#{$country} {
+        background-image: url(../images/flags/#{$country}.png);
+        max-width: 100%;
+        background-size: 300px 170px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+}
+
 @mixin team-color-shadow($teamName, $color) {
     .#{$teamName}-shadow-color {
         box-shadow: 2px 2px 7px #{$color};

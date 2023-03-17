@@ -53,3 +53,9 @@
         max-height: 100%;
     }
 }
+
+@include between-mobile-tablet{
+    .scheduleCard{
+        width: 262px;
+    }
+}

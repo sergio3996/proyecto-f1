@@ -67,8 +67,7 @@ header {
 .navbar {
   font-size: 20px;
   font-weight: 600;
-  padding: 0px 15%;
-  height: 80px; }
+  padding: 0px 15%; }
 
 .navLogo {
   width: 95px;
@@ -158,6 +157,7 @@ footer {
   padding: 0; }
 
 .twitter-timeline {
+  text-decoration: none;
   padding: 3px 0;
   border-width: 1px;
   border-radius: 5px;
@@ -165,7 +165,14 @@ footer {
   width: 356px;
   max-width: 95%; }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .newsCard {
+    height: fit-content;
+    width: 100%; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .news {
+    justify-content: center; }
   .newsCard {
     flex-direction: column;
     height: fit-content;
@@ -176,10 +183,18 @@ footer {
       height: 200px;
       width: 320px; } }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 576px) {
+  .news {
+    justify-content: center; }
   .newsCard {
+    flex-direction: column;
     height: fit-content;
-    width: 100%; } }
+    width: 400px; }
+    .newsCard .card-image {
+      max-width: 100%;
+      max-height: 100%;
+      height: 200px;
+      width: 320px; } }
 
 .nav-tabs {
   border: none;
@@ -263,7 +278,8 @@ footer {
     align-items: center;
     margin: 20px;
     box-shadow: 2px 3px 5px #888888;
-    max-width: 100%; }
+    max-width: 100%;
+    width: 240px; }
     .teamDrivers .driver-card img {
       max-width: 100%; }
     .teamDrivers .driver-card h2 {
@@ -336,26 +352,30 @@ footer {
 .williams-shadow-color {
   box-shadow: 2px 2px 7px #37bedd; }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .team {
-    flex-direction: column;
-    height: auto; }
-    .team .teamCard {
-      width: 400px; }
-  .teamDrivers {
-    display: flex;
-    justify-content: space-evenly; }
-    .teamDrivers .driver-card {
-      margin: 30px;
-      width: 240px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .teams ul {
+    width: 95%; }
+    .teams ul li {
+      margin: 5px;
+      width: 48%; } }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  .teamCard {
-    width: 400px; }
+  .teams ul {
+    width: 95%; }
+    .teams ul li {
+      margin: 5px;
+      width: 45%; }
   .teamDrivers {
-    flex-direction: column; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; } }
 
 @media (max-width: 576px) {
+  .teams ul {
+    width: 95%; }
+    .teams ul li {
+      margin: 5px;
+      width: 40%; }
   .team {
     flex-direction: column;
     height: auto; }
@@ -398,93 +418,112 @@ footer {
 
 .drivercardBackground--unitedkingdom {
   background-image: url(../images/flags/unitedkingdom.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--netherlands {
   background-image: url(../images/flags/netherlands.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--mexico {
   background-image: url(../images/flags/mexico.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--monaco {
   background-image: url(../images/flags/monaco.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--spain {
   background-image: url(../images/flags/spain.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--france {
   background-image: url(../images/flags/france.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--australia {
   background-image: url(../images/flags/australia.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--china {
   background-image: url(../images/flags/china.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--germany {
   background-image: url(../images/flags/germany.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--canada {
   background-image: url(../images/flags/canada.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--denmark {
   background-image: url(../images/flags/denmark.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--japan {
   background-image: url(../images/flags/japan.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--thailand {
   background-image: url(../images/flags/thailand.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--unitedstate {
   background-image: url(../images/flags/unitedstate.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .drivercardBackground--finland {
   background-image: url(../images/flags/finland.png);
-  background-size: 400px 170px;
+  max-width: 100%;
+  background-size: 300px 170px;
   background-repeat: no-repeat;
   background-position: center bottom; }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .driverCard {
+    width: 262px; } }
 
 .scheduleContent {
   padding: 20px 0; }
@@ -530,6 +569,10 @@ footer {
     max-width: 100%;
     max-height: 100%; }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  .scheduleCard {
+    width: 262px; } }
+
 .carousel-caption h5 {
   font-weight: bolder;
   text-shadow: 1px 1px 2px black; }
@@ -544,10 +587,10 @@ footer {
 .modal-margintop-10 {
   margin-top: 10%; }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .modal-md-width {
     --bs-modal-width: 700px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .position-center {
     position: 50% 50%; } }

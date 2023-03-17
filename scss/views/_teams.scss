@@ -108,8 +108,9 @@
         margin: 20px;
         box-shadow: 2px 3px 5px #888888;
         max-width: 100%;
+        width: 240px;
 
-        img{
+        img {
             max-width: 100%;
         }
 
@@ -139,38 +140,46 @@ $color in $teams-colors {
 }
 
 @include tablet {
-    .team {
-        flex-direction: column;
-        height: auto;
-
-        .teamCard {
-            width: 400px;
-        }
-    }
-
-    .teamDrivers {
-        display: flex;
-        justify-content: space-evenly;
-
-        .driver-card {
-            margin: 30px;
-            width: 240px;
+    .teams {
+        ul {
+            width: 95%;
+            li {
+                margin: 5px;
+                width: 48%;
+            }
         }
     }
 }
 
 @include between-mobile-tablet {
-    .teamCard {
-        width: 400px;
+    .teams {
+        ul {
+            width: 95%;
+            li {
+                margin: 5px;
+                width: 45%;
+            }
+        }
     }
-
+    
     .teamDrivers {
+        display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
     }
-
 }
 
 @include mobile {
+    .teams {
+        ul {
+            width: 95%;
+            li {
+                margin: 5px;
+                width: 40%;
+            }
+        }
+    }
+
     .team {
         flex-direction: column;
         height: auto;
