@@ -8,9 +8,7 @@
     margin-top: 10%;
 }
 
-@include mobile {
-    
-}
+@include mobile {}
 
 @include tablet {
     .modal-md-width {

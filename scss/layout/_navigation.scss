@@ -12,7 +12,7 @@
     vertical-align: baseline;
 }
 
-@include between-mobile-tablet{
+@include between-mobile-tablet {
     .navbar {
         padding: 0px 5px;
     }
@@ -23,4 +23,3 @@
         padding: 0px 5px;
     }
 }
-

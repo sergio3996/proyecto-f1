@@ -143,6 +143,7 @@ $color in $teams-colors {
     .teams {
         ul {
             width: 95%;
+
             li {
                 margin: 5px;
                 width: 48%;
@@ -155,13 +156,14 @@ $color in $teams-colors {
     .teams {
         ul {
             width: 95%;
+
             li {
                 margin: 5px;
                 width: 45%;
             }
         }
     }
-    
+
     .teamDrivers {
         display: flex;
         flex-direction: column;
@@ -173,6 +175,7 @@ $color in $teams-colors {
     .teams {
         ul {
             width: 95%;
+
             li {
                 margin: 5px;
                 width: 40%;

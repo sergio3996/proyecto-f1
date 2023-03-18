@@ -5,6 +5,7 @@ header {
     background-size: 400% 100%;
     animation: gradient 10s linear infinite;
     animation-direction: alternate;
+
     .banner {
         width: 100vw;
         height: auto;
@@ -36,24 +37,28 @@ header {
     }
 }
 
-@keyframes banner-blur{
-    0%{
+@keyframes banner-blur {
+    0% {
         filter: blur(0px);
         transform: scale(1);
     }
-    25%{
+
+    25% {
         filter: blur(0.5px);
         transform: scale(1.02);
     }
-    50%{
+
+    50% {
         filter: blur(1px);
         transform: scale(1.03);
     }
-    75%{
+
+    75% {
         filter: blur(0.5px);
         transform: scale(1.02);
     }
-    100%{
+
+    100% {
         filter: blur(0px);
         transform: scale(1);
     }

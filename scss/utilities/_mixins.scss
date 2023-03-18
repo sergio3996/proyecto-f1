@@ -6,8 +6,8 @@
     }
 }
 
-@mixin between-mobile-tablet{
-    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}){
+@mixin between-mobile-tablet {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
         @content;
     }
 }

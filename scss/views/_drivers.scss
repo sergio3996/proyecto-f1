@@ -41,8 +41,8 @@
     @include driver-card-background($country);
 }
 
-@include between-mobile-tablet{
-    .driverCard{
+@include between-mobile-tablet {
+    .driverCard {
         width: 262px;
     }
 }

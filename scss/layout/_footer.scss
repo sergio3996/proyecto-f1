@@ -46,7 +46,7 @@ footer {
 
 }
 
-@include between-mobile-tablet{
+@include between-mobile-tablet {
     .footerContent {
         padding: 0 5px;
     }
