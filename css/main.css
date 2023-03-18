@@ -12,6 +12,9 @@ body {
   padding: 0px;
   overflow-x: hidden; }
 
+main {
+  min-height: 70%; }
+
 body {
   font-family: 'Titillium Web', sans-serif; }
 
@@ -580,6 +583,10 @@ footer {
 @media (min-width: 576px) and (max-width: 768px) {
   .scheduleCard {
     width: 262px; } }
+
+.galeryContent {
+  padding: 0 8%;
+  margin-top: 20px; }
 
 .carousel-caption h5 {
   font-weight: bolder;
